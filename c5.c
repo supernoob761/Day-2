@@ -11,7 +11,7 @@ int main()
     scanf("%d",&j);
     printf("pick a number for n:");
     scanf("%d",&n);
-    if(j==0)
+    if(n==0)
     total = 1;
     else{
  for (int i=0 ; i < n; i++)
