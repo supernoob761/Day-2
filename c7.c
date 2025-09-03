@@ -2,16 +2,21 @@
 #include <stdlib.h>
 #include <math.h>
 
-int main()
-{
+int main() {
     int j;
-    int total = 0;
-    printf("pick a number for n :");
-    scanf("%d",&j);
- for (int i = 1; i <= j; i++)
- {
-    total += i;
- }
- printf("resault is : %d " , total);
+    int reversed = 0; 
+    int digit;
+
+    printf("Enter a number: ");
+    scanf("%d", &j);
+
+    while (j != 0) {
+        digit = j % 10;          
+        reversed = reversed * 10 + digit; 
+        j = j / 10;         
+    }
+
+    printf("%d", reversed);
+
     return 0;
 }
