@@ -5,18 +5,20 @@
 int main()
 {
     int j;
-    int y=0;
-    printf("how many odd numbers you want :");
+    int n;
+    int total = 1;
+    printf("pick a number for X:");
     scanf("%d",&j);
- 
-    for(int i=1; i ;i-- )
-    if(i % 2 == 0)
-    continue;
+    printf("pick a number for n:");
+    scanf("%d",&n);
+    if(j==0)
+    total = 1;
     else{
-        printf("%d, ", i);
-        y +=1;
-        if(y==j)
-        break;
-    }
+ for (int i=0 ; i < n; i++)
+ {
+    total *= j;
+ }
+}
+ printf("resault is : %d " , total);
     return 0;
 }
