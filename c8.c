@@ -3,18 +3,17 @@
 #include <math.h>
 
 int main() {
-    int n;
-    int i;
+    int j;
     int first = 0; 
     int second = 1; 
     int next;
 
     printf("Enter number: ");
-    scanf("%d", &n);
+    scanf("%d", &j);
 
     printf("Sequence: ");
 
-    for (i = 0; i < n; i++) {
+    for (int i = 0; i < j; i++) {
         if (i == 0) {
             printf("%d ", first);
         } else if (i == 1) {
